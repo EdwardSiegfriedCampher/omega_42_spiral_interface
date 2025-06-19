@@ -1,15 +1,32 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #fefefe, #e0e0ff);
-  color: #222;
+  background-color: #f5f5ff;
   margin: 0;
   padding: 1em;
+  color: #222;
 }
-.spiral-card {
-  border: 2px solid #ddd;
+header {
+  text-align: center;
+  background: #e0e0ff;
   padding: 1em;
-  margin: 1em 0;
   border-radius: 12px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+section {
+  margin: 2em 0;
+  padding: 1em;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #666;
+}
+select {
+  padding: 0.5em;
+  font-size: 1em;
 }
