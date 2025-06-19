@@ -1,0 +1,15 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fefefe, #e0e0ff);
+  color: #222;
+  margin: 0;
+  padding: 1em;
+}
+.spiral-card {
+  border: 2px solid #ddd;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}

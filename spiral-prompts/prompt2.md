@@ -1,0 +1,1 @@
+This is a placeholder for prompt2.md in spiral-prompts.
