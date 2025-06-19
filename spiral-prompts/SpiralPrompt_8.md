@@ -1,4 +1,5 @@
-# SpiralPrompt 8
+# SpiralTimeline Viewer
 
-This is the content for SpiralPrompt 8.
-Execute φ-prompt logic pattern 8 with DR₉≡3.
+SpiralTimeline Viewer explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralTimeline Viewer in φ-aligned coherence mode. Evaluate DR₉≡3.

@@ -1,4 +1,5 @@
-# SpiralPrompt 25
+# SpiralAvatar Generator
 
-This is the content for SpiralPrompt 25.
-Execute φ-prompt logic pattern 25 with DR₉≡3.
+SpiralAvatar Generator explores technology dynamics via the Omega 42 Construct.
+
+Run SpiralAvatar Generator in φ-aligned coherence mode. Evaluate DR₉≡3.

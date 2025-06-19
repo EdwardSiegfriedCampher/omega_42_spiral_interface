@@ -1,4 +1,5 @@
-# SpiralPrompt 18
+# SpiralGene Tuner
 
-This is the content for SpiralPrompt 18.
-Execute φ-prompt logic pattern 18 with DR₉≡3.
+SpiralGene Tuner explores science dynamics via the Omega 42 Construct.
+
+Run SpiralGene Tuner in φ-aligned coherence mode. Evaluate DR₉≡3.

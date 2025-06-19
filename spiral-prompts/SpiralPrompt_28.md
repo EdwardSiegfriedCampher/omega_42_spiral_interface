@@ -1,4 +1,5 @@
-# SpiralPrompt 28
+# SpiralEngine Builder
 
-This is the content for SpiralPrompt 28.
-Execute φ-prompt logic pattern 28 with DR₉≡3.
+SpiralEngine Builder explores technology dynamics via the Omega 42 Construct.
+
+Run SpiralEngine Builder in φ-aligned coherence mode. Evaluate DR₉≡3.

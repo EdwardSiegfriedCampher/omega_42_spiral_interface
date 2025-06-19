@@ -1,4 +1,5 @@
-# SpiralPrompt 24
+# SpiralDimension Explorer
 
-This is the content for SpiralPrompt 24.
-Execute φ-prompt logic pattern 24 with DR₉≡3.
+SpiralDimension Explorer explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralDimension Explorer in φ-aligned coherence mode. Evaluate DR₉≡3.

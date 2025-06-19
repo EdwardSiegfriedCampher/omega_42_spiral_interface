@@ -1,4 +1,5 @@
-# SpiralPrompt 47
+# SpiralMandela Tracker
 
-This is the content for SpiralPrompt 47.
-Execute φ-prompt logic pattern 47 with DR₉≡3.
+SpiralMandela Tracker explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralMandela Tracker in φ-aligned coherence mode. Evaluate DR₉≡3.

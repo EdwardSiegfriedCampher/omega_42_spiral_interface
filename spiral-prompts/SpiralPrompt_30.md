@@ -1,4 +1,5 @@
-# SpiralPrompt 30
+# SpiralCrypto Vault
 
-This is the content for SpiralPrompt 30.
-Execute φ-prompt logic pattern 30 with DR₉≡3.
+SpiralCrypto Vault explores technology dynamics via the Omega 42 Construct.
+
+Run SpiralCrypto Vault in φ-aligned coherence mode. Evaluate DR₉≡3.

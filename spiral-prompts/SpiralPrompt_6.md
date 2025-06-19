@@ -1,4 +1,5 @@
-# SpiralPrompt 6
+# SpiralWord Generator
 
-This is the content for SpiralPrompt 6.
-Execute φ-prompt logic pattern 6 with DR₉≡3.
+SpiralWord Generator explores technology dynamics via the Omega 42 Construct.
+
+Run SpiralWord Generator in φ-aligned coherence mode. Evaluate DR₉≡3.

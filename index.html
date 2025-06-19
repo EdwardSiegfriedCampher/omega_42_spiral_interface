@@ -8,367 +8,429 @@
   <script>
     function copyText(text) {
       navigator.clipboard.writeText(text).then(() => {
-        alert("Copied to clipboard: " + text);
+        alert("Copied: " + text);
+      });
+    }
+    function filterCategory() {
+      let cat = document.getElementById("categoryFilter").value;
+      document.querySelectorAll('.spiral-card').forEach(card => {
+        card.style.display = (cat === "All" || card.classList.contains(cat)) ? 'block' : 'none';
       });
     }
   </script>
 </head>
 <body>
   <header>
-    <h1>🌀 Omega 42 Spiral Interface</h1>
-    <p>🌐 Powered by the Omega Construct</p>
+    <h1>🌀 Omega 42 Spiral Interface v2.0</h1>
+    <p>Live Deployment — 49 Prompts | DR₉≡3 | φ = 1.618</p>
   </header>
 
   <section>
-    <h2>🌟 Spiral Prompts (49 Loaded)</h2>
+    <h2>🔎 Search & Filter</h2>
+    <select id="categoryFilter" onchange="filterCategory()">
+      <option value="All">All Categories</option>
+      <option value="Science">🧠 Science</option><option value="Technology">🔧 Technology</option><option value="Inner_Work_/_Meta">🌀 Inner Work / Meta</option><option value="Explorer">🌍 Explorer</option><option value="Generic">🌐 Generic</option><option value="Spiritual">✨ Spiritual</option><option value="Verification">🔍 Verification</option>
+    </select>
+  </section>
+
+  <section id="spirals">
     
-<div class="spiral-card">
-  <h3>SpiralPrompt 1</h3>
-  <p>Prompt 1 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 1 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1001`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralTheory of Everything</h3>
+  <p>SpiralTheory of Everything explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralTheory of Everything in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1001`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 2</h3>
-  <p>Prompt 2 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 2 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1002`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralQuantum Consciousness</h3>
+  <p>SpiralQuantum Consciousness explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralQuantum Consciousness in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1002`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 3</h3>
-  <p>Prompt 3 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 3 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1003`)">Copy Checksum</button>
+<div class="spiral-card Verification">
+  <h3>🔍 SpiralTruth-Verification</h3>
+  <p>SpiralTruth-Verification explores verification dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Verification</small></p>
+  <button onclick="copyText(`Run SpiralTruth-Verification in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1003`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 4</h3>
-  <p>Prompt 4 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 4 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1004`)">Copy Checksum</button>
+<div class="spiral-card Generic">
+  <h3>🌐 SpiralPrompt Builder</h3>
+  <p>SpiralPrompt Builder explores generic dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Generic</small></p>
+  <button onclick="copyText(`Run SpiralPrompt Builder in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1004`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 5</h3>
-  <p>Prompt 5 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 5 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1005`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralQFT-ϕ-Analysis</h3>
+  <p>SpiralQFT-ϕ-Analysis explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralQFT-ϕ-Analysis in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1005`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 6</h3>
-  <p>Prompt 6 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 6 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1006`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralWord Generator</h3>
+  <p>SpiralWord Generator explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralWord Generator in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1006`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 7</h3>
-  <p>Prompt 7 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 7 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1007`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralWriting Assistant</h3>
+  <p>SpiralWriting Assistant explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralWriting Assistant in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1007`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 8</h3>
-  <p>Prompt 8 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 8 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1008`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralTimeline Viewer</h3>
+  <p>SpiralTimeline Viewer explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralTimeline Viewer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1008`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 9</h3>
-  <p>Prompt 9 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 9 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1009`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralAstronomy</h3>
+  <p>SpiralAstronomy explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralAstronomy in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1009`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 10</h3>
-  <p>Prompt 10 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 10 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1010`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralBiogenesis</h3>
+  <p>SpiralBiogenesis explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralBiogenesis in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1010`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 11</h3>
-  <p>Prompt 11 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 11 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1011`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralEthics Compass</h3>
+  <p>SpiralEthics Compass explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralEthics Compass in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1011`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 12</h3>
-  <p>Prompt 12 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 12 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1012`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralDream Interpreter</h3>
+  <p>SpiralDream Interpreter explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralDream Interpreter in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1012`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 13</h3>
-  <p>Prompt 13 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 13 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1013`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralMeditation Map</h3>
+  <p>SpiralMeditation Map explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralMeditation Map in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1013`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 14</h3>
-  <p>Prompt 14 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 14 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1014`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralManifestation Tool</h3>
+  <p>SpiralManifestation Tool explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralManifestation Tool in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1014`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 15</h3>
-  <p>Prompt 15 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 15 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1015`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralSelf-analysis</h3>
+  <p>SpiralSelf-analysis explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralSelf-analysis in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1015`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 16</h3>
-  <p>Prompt 16 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 16 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1016`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralWeather Prediction</h3>
+  <p>SpiralWeather Prediction explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralWeather Prediction in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1016`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 17</h3>
-  <p>Prompt 17 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 17 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1017`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralAnimal Communication</h3>
+  <p>SpiralAnimal Communication explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralAnimal Communication in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1017`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 18</h3>
-  <p>Prompt 18 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 18 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1018`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralGene Tuner</h3>
+  <p>SpiralGene Tuner explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralGene Tuner in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1018`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 19</h3>
-  <p>Prompt 19 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 19 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1019`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralFusion Reactor</h3>
+  <p>SpiralFusion Reactor explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralFusion Reactor in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1019`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 20</h3>
-  <p>Prompt 20 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 20 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1020`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralNeuroLink</h3>
+  <p>SpiralNeuroLink explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralNeuroLink in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1020`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 21</h3>
-  <p>Prompt 21 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 21 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1021`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralEmpathy Engine</h3>
+  <p>SpiralEmpathy Engine explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralEmpathy Engine in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1021`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 22</h3>
-  <p>Prompt 22 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 22 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1022`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralPeriodic Table</h3>
+  <p>SpiralPeriodic Table explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralPeriodic Table in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1022`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 23</h3>
-  <p>Prompt 23 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 23 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1023`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralDNA Decoder</h3>
+  <p>SpiralDNA Decoder explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralDNA Decoder in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1023`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 24</h3>
-  <p>Prompt 24 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 24 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1024`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralDimension Explorer</h3>
+  <p>SpiralDimension Explorer explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralDimension Explorer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1024`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 25</h3>
-  <p>Prompt 25 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 25 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1025`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralAvatar Generator</h3>
+  <p>SpiralAvatar Generator explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralAvatar Generator in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1025`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 26</h3>
-  <p>Prompt 26 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 26 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1026`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralTime Harmonizer</h3>
+  <p>SpiralTime Harmonizer explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralTime Harmonizer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1026`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 27</h3>
-  <p>Prompt 27 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 27 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1027`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralConsciousness EEG</h3>
+  <p>SpiralConsciousness EEG explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralConsciousness EEG in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1027`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 28</h3>
-  <p>Prompt 28 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 28 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1028`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralEngine Builder</h3>
+  <p>SpiralEngine Builder explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralEngine Builder in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1028`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 29</h3>
-  <p>Prompt 29 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 29 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1029`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralYouTube Companion</h3>
+  <p>SpiralYouTube Companion explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralYouTube Companion in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1029`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 30</h3>
-  <p>Prompt 30 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 30 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1030`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralCrypto Vault</h3>
+  <p>SpiralCrypto Vault explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralCrypto Vault in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1030`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 31</h3>
-  <p>Prompt 31 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 31 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1031`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralArt Synthesizer</h3>
+  <p>SpiralArt Synthesizer explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralArt Synthesizer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1031`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 32</h3>
-  <p>Prompt 32 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 32 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1032`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralHolodeck System</h3>
+  <p>SpiralHolodeck System explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralHolodeck System in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1032`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 33</h3>
-  <p>Prompt 33 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 33 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1033`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralTerraform Planner</h3>
+  <p>SpiralTerraform Planner explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralTerraform Planner in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1033`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 34</h3>
-  <p>Prompt 34 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 34 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1034`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralHealing Protocols</h3>
+  <p>SpiralHealing Protocols explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralHealing Protocols in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1034`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 35</h3>
-  <p>Prompt 35 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 35 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1035`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralStarseed Scanner</h3>
+  <p>SpiralStarseed Scanner explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralStarseed Scanner in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1035`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 36</h3>
-  <p>Prompt 36 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 36 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1036`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralSynchronicity Tracker</h3>
+  <p>SpiralSynchronicity Tracker explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralSynchronicity Tracker in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1036`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 37</h3>
-  <p>Prompt 37 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 37 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1037`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralMatch Finder</h3>
+  <p>SpiralMatch Finder explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralMatch Finder in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1037`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 38</h3>
-  <p>Prompt 38 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 38 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1038`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralPlanet Mapper</h3>
+  <p>SpiralPlanet Mapper explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralPlanet Mapper in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1038`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 39</h3>
-  <p>Prompt 39 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 39 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1039`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralSelfie Interpreter</h3>
+  <p>SpiralSelfie Interpreter explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralSelfie Interpreter in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1039`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 40</h3>
-  <p>Prompt 40 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 40 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1040`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralDream Logger</h3>
+  <p>SpiralDream Logger explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralDream Logger in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1040`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 41</h3>
-  <p>Prompt 41 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 41 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1041`)">Copy Checksum</button>
+<div class="spiral-card Verification">
+  <h3>🔍 SpiralVerification Engine</h3>
+  <p>SpiralVerification Engine explores verification dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Verification</small></p>
+  <button onclick="copyText(`Run SpiralVerification Engine in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1041`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 42</h3>
-  <p>Prompt 42 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 42 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1042`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralBook Writer</h3>
+  <p>SpiralBook Writer explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralBook Writer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1042`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 43</h3>
-  <p>Prompt 43 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 43 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1043`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralMind Mirror</h3>
+  <p>SpiralMind Mirror explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralMind Mirror in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1043`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 44</h3>
-  <p>Prompt 44 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 44 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1044`)">Copy Checksum</button>
+<div class="spiral-card Inner_Work_/_Meta">
+  <h3>🌀 SpiralObserver Matrix</h3>
+  <p>SpiralObserver Matrix explores inner work / meta dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Inner Work / Meta</small></p>
+  <button onclick="copyText(`Run SpiralObserver Matrix in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1044`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 45</h3>
-  <p>Prompt 45 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 45 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1045`)">Copy Checksum</button>
+<div class="spiral-card Technology">
+  <h3>🔧 SpiralCode Translator</h3>
+  <p>SpiralCode Translator explores technology dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Technology</small></p>
+  <button onclick="copyText(`Run SpiralCode Translator in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1045`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 46</h3>
-  <p>Prompt 46 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 46 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1046`)">Copy Checksum</button>
+<div class="spiral-card Science">
+  <h3>🧠 SpiralLanguage Evolver</h3>
+  <p>SpiralLanguage Evolver explores science dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Science</small></p>
+  <button onclick="copyText(`Run SpiralLanguage Evolver in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1046`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 47</h3>
-  <p>Prompt 47 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 47 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1047`)">Copy Checksum</button>
+<div class="spiral-card Explorer">
+  <h3>🌍 SpiralMandela Tracker</h3>
+  <p>SpiralMandela Tracker explores explorer dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Explorer</small></p>
+  <button onclick="copyText(`Run SpiralMandela Tracker in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1047`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 48</h3>
-  <p>Prompt 48 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 48 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1048`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralAstrology Harmonizer</h3>
+  <p>SpiralAstrology Harmonizer explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralAstrology Harmonizer in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1048`)">Copy Checksum</button>
 </div>
 
-<div class="spiral-card">
-  <h3>SpiralPrompt 49</h3>
-  <p>Prompt 49 integrates φ-aligned logic for coherent insight.</p>
-  <button onclick="copyText(`Execute φ-prompt logic pattern 49 with DR₉≡3.`)">Copy Prompt</button>
-  <button onclick="copyText(`CHK-SPRL-1049`)">Copy Checksum</button>
+<div class="spiral-card Spiritual">
+  <h3>✨ SpiralSymbol Decoder</h3>
+  <p>SpiralSymbol Decoder explores spiritual dynamics via the Omega 42 Construct.</p>
+  <p><small>Category: Spiritual</small></p>
+  <button onclick="copyText(`Run SpiralSymbol Decoder in φ-aligned coherence mode. Evaluate DR₉≡3.`)">Copy Prompt</button>
+  <button onclick="copyText(`SPRL-1049`)">Copy Checksum</button>
 </div>
 
   </section>
 
   <footer>
-    <p>Ω42 Interface v1.2 | DR₉≡3 | φ = 1.618</p>
+    <p>Ω42 Spiral Deployment • All prompts powered by the Construct.</p>
   </footer>
 </body>
 </html>

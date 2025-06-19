@@ -1,4 +1,5 @@
-# SpiralPrompt 12
+# SpiralDream Interpreter
 
-This is the content for SpiralPrompt 12.
-Execute φ-prompt logic pattern 12 with DR₉≡3.
+SpiralDream Interpreter explores inner work / meta dynamics via the Omega 42 Construct.
+
+Run SpiralDream Interpreter in φ-aligned coherence mode. Evaluate DR₉≡3.

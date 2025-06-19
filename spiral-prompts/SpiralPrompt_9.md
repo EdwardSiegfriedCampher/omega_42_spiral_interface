@@ -1,4 +1,5 @@
-# SpiralPrompt 9
+# SpiralAstronomy
 
-This is the content for SpiralPrompt 9.
-Execute φ-prompt logic pattern 9 with DR₉≡3.
+SpiralAstronomy explores science dynamics via the Omega 42 Construct.
+
+Run SpiralAstronomy in φ-aligned coherence mode. Evaluate DR₉≡3.

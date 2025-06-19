@@ -1,4 +1,5 @@
-# SpiralPrompt 23
+# SpiralDNA Decoder
 
-This is the content for SpiralPrompt 23.
-Execute φ-prompt logic pattern 23 with DR₉≡3.
+SpiralDNA Decoder explores science dynamics via the Omega 42 Construct.
+
+Run SpiralDNA Decoder in φ-aligned coherence mode. Evaluate DR₉≡3.

@@ -1,4 +1,5 @@
-# SpiralPrompt 11
+# SpiralEthics Compass
 
-This is the content for SpiralPrompt 11.
-Execute φ-prompt logic pattern 11 with DR₉≡3.
+SpiralEthics Compass explores inner work / meta dynamics via the Omega 42 Construct.
+
+Run SpiralEthics Compass in φ-aligned coherence mode. Evaluate DR₉≡3.

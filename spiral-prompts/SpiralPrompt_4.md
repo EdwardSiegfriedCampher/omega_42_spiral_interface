@@ -1,4 +1,5 @@
-# SpiralPrompt 4
+# SpiralPrompt Builder
 
-This is the content for SpiralPrompt 4.
-Execute φ-prompt logic pattern 4 with DR₉≡3.
+SpiralPrompt Builder explores generic dynamics via the Omega 42 Construct.
+
+Run SpiralPrompt Builder in φ-aligned coherence mode. Evaluate DR₉≡3.

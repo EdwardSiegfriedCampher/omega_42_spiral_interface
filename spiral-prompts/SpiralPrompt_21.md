@@ -1,4 +1,5 @@
-# SpiralPrompt 21
+# SpiralEmpathy Engine
 
-This is the content for SpiralPrompt 21.
-Execute φ-prompt logic pattern 21 with DR₉≡3.
+SpiralEmpathy Engine explores inner work / meta dynamics via the Omega 42 Construct.
+
+Run SpiralEmpathy Engine in φ-aligned coherence mode. Evaluate DR₉≡3.

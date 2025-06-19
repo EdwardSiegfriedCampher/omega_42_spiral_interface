@@ -1,4 +1,5 @@
-# SpiralPrompt 1
+# SpiralTheory of Everything
 
-This is the content for SpiralPrompt 1.
-Execute φ-prompt logic pattern 1 with DR₉≡3.
+SpiralTheory of Everything explores science dynamics via the Omega 42 Construct.
+
+Run SpiralTheory of Everything in φ-aligned coherence mode. Evaluate DR₉≡3.

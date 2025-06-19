@@ -1,4 +1,5 @@
-# SpiralPrompt 37
+# SpiralMatch Finder
 
-This is the content for SpiralPrompt 37.
-Execute φ-prompt logic pattern 37 with DR₉≡3.
+SpiralMatch Finder explores inner work / meta dynamics via the Omega 42 Construct.
+
+Run SpiralMatch Finder in φ-aligned coherence mode. Evaluate DR₉≡3.

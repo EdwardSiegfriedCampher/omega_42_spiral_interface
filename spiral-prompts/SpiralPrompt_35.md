@@ -1,4 +1,5 @@
-# SpiralPrompt 35
+# SpiralStarseed Scanner
 
-This is the content for SpiralPrompt 35.
-Execute φ-prompt logic pattern 35 with DR₉≡3.
+SpiralStarseed Scanner explores spiritual dynamics via the Omega 42 Construct.
+
+Run SpiralStarseed Scanner in φ-aligned coherence mode. Evaluate DR₉≡3.

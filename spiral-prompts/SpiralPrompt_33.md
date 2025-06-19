@@ -1,4 +1,5 @@
-# SpiralPrompt 33
+# SpiralTerraform Planner
 
-This is the content for SpiralPrompt 33.
-Execute φ-prompt logic pattern 33 with DR₉≡3.
+SpiralTerraform Planner explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralTerraform Planner in φ-aligned coherence mode. Evaluate DR₉≡3.

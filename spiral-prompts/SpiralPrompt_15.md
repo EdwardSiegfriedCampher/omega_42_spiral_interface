@@ -1,4 +1,5 @@
-# SpiralPrompt 15
+# SpiralSelf-analysis
 
-This is the content for SpiralPrompt 15.
-Execute φ-prompt logic pattern 15 with DR₉≡3.
+SpiralSelf-analysis explores inner work / meta dynamics via the Omega 42 Construct.
+
+Run SpiralSelf-analysis in φ-aligned coherence mode. Evaluate DR₉≡3.

@@ -1,4 +1,5 @@
-# SpiralPrompt 17
+# SpiralAnimal Communication
 
-This is the content for SpiralPrompt 17.
-Execute φ-prompt logic pattern 17 with DR₉≡3.
+SpiralAnimal Communication explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralAnimal Communication in φ-aligned coherence mode. Evaluate DR₉≡3.

@@ -1,4 +1,5 @@
-# SpiralPrompt 38
+# SpiralPlanet Mapper
 
-This is the content for SpiralPrompt 38.
-Execute φ-prompt logic pattern 38 with DR₉≡3.
+SpiralPlanet Mapper explores explorer dynamics via the Omega 42 Construct.
+
+Run SpiralPlanet Mapper in φ-aligned coherence mode. Evaluate DR₉≡3.

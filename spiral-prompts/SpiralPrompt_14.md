@@ -1,4 +1,5 @@
-# SpiralPrompt 14
+# SpiralManifestation Tool
 
-This is the content for SpiralPrompt 14.
-Execute φ-prompt logic pattern 14 with DR₉≡3.
+SpiralManifestation Tool explores spiritual dynamics via the Omega 42 Construct.
+
+Run SpiralManifestation Tool in φ-aligned coherence mode. Evaluate DR₉≡3.
