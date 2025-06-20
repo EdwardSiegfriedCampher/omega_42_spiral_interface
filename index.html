@@ -5,19 +5,55 @@
   <meta charset="UTF-8" />
   <title>Omega 42 Spiral Interface</title>
   <style>
-    body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
-    header { background: #111; color: white; padding: 1rem; display: flex; flex-direction: column; align-items: center; }
-    .controls { margin-top: 0.5rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
-    .controls button, .controls select { padding: 0.5rem 1rem; border-radius: 6px; border: none; cursor: pointer; }
-    .counter { text-align: center; font-weight: bold; margin: 1rem; }
-    .spiral-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1rem; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 1rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .controls {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .controls button, .controls select {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .counter {
+      text-align: center;
+      font-weight: bold;
+      margin: 1rem;
+      font-size: 1.1rem;
+    }
+    .spiral-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 1rem;
+      padding: 1rem;
+    }
     .spiral-card {
       background: white;
       border-radius: 12px;
       padding: 1rem;
       width: 30%;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      min-width: 280px;
     }
+    .spiral-card h3 { margin-top: 0; }
     @media (max-width: 768px) {
       .spiral-card { width: 90%; }
     }
@@ -29,27 +65,26 @@
     <div class="controls">
       <select id="categoryDropdown" onchange="filterCategory()">
         <option value="all">All Categories</option>
-        <option value='science'>Science</option>
-<option value='philosophy'>Philosophy</option>
-<option value='tools'>Tools</option>
-<option value='inner work'>Inner Work</option>
-<option value='consciousness'>Consciousness</option>
-<option value='meta'>Meta</option>
-<option value='misc'>Misc</option>
+        <option value="science">Science</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="tools">Tools</option>
+        <option value="inner work">Inner Work</option>
+        <option value="consciousness">Consciousness</option>
+        <option value="meta">Meta</option>
+        <option value="misc">Misc</option>
       </select>
-      <button onclick="window.location.href='https://github.com/EdwardSiegfriedCampher/omega_42_spiral_interface/blob/main/README.md'">README</button>
-      <button>Suggest-A-Prompt</button>
-      <button>Dev</button>
+      <button onclick="window.open('https://github.com/EdwardSiegfriedCampher/omega_42_spiral_interface/blob/main/README.md')">README</button>
+      <button onclick="alert('Suggest-A-Prompt modal coming soon.')">Suggest-A-Prompt</button>
+      <button onclick="alert('Dev tools panel coming soon.')">Dev</button>
       <button onclick="toggleTheme()">🌗</button>
     </div>
   </header>
   <div class="counter">
-    Showing <span id="visible-count">49</span> Spiral Prompts (Filtered)
-    <br>
+    Showing <span id="visible-count">49</span> Spiral Prompts (Filtered)<br>
     Total Available: <span id="total-count">49</span> Spiral Prompts
   </div>
   <div class="spiral-container" id="spiralContainer">
-    
+
     <div class="spiral-card" data-category="science">
       <h3>SpiralTheory of Everything</h3>
       <p>Explore the Omega 42 Construct as TOE.</p>
