@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Omega 42 Spiral Interface</title>
+  <title>Omega 42 Interface</title>
   <style>
     body {
       font-family: sans-serif;
@@ -11,446 +11,136 @@
       background: #f0f0f0;
     }
     header {
-      background: #111;
-      color: white;
-      padding: 1rem 0.5rem;
+      background: #121212;
+      color: #fff;
+      padding: 1em;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
     }
-    .controls {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    .omega-tooltip {
+      position: relative;
+      cursor: pointer;
+      margin-left: 1em;
     }
-    .controls button, .controls select {
-      padding: 0.5rem 1rem;
+    .omega-tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tooltiptext {
+      visibility: hidden;
+      width: 320px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .prompt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      padding: 2em;
+    }
+    .prompt-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1em;
+      transition: transform 0.2s;
+    }
+    .prompt-card:hover {
+      transform: scale(1.02);
+    }
+    .category {
+      font-size: 0.9em;
+      color: #888;
+    }
+    .controls {
+      display: flex;
+      gap: 1em;
+    }
+    button {
+      padding: 0.5em 1em;
       border-radius: 6px;
       border: none;
       cursor: pointer;
-      font-weight: bold;
     }
-    .counter {
+    footer {
       text-align: center;
-      font-weight: bold;
-      margin: 1rem;
-      font-size: 1.1rem;
-    }
-    .spiral-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    .spiral-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      width: 30%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      min-width: 280px;
-    }
-    .spiral-card h3 { margin-top: 0; }
-    @media (max-width: 768px) {
-      .spiral-card { width: 90%; }
+      padding: 2em;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Omega 42 Spiral Interface</h1>
+    <div>
+      <strong>Omega 42 Interface</strong>
+      <span class="omega-tooltip">Ω
+        <div class="tooltiptext">
+          <strong>What is Omega 42?</strong><br><br>
+          Omega 42 is a geometric theory of everything:<br>
+          • Ω = The recursive origin and final observer<br>
+          • 42 = Triadic harmony across time: 3 → 6 → 9<br><br>
+          It unifies:<br>
+          • Physics (energy ↔ geometry)<br>
+          • Consciousness (observer ↔ observed)<br>
+          • Time (Fibonacci-based 24-beat cycles)<br><br>
+          The number 42 reflects how reality compresses itself into coherence.
+        </div>
+      </span>
+    </div>
     <div class="controls">
-      <select id="categoryDropdown" onchange="filterCategory()">
-        <option value="all">All Categories</option>
-        <option value="science">Science</option>
-        <option value="philosophy">Philosophy</option>
-        <option value="tools">Tools</option>
-        <option value="inner work">Inner Work</option>
-        <option value="consciousness">Consciousness</option>
-        <option value="meta">Meta</option>
-        <option value="misc">Misc</option>
-      </select>
-      <button onclick="window.open('https://github.com/EdwardSiegfriedCampher/omega_42_spiral_interface/blob/main/README.md')">README</button>
-      <button onclick="alert('Suggest-A-Prompt modal coming soon.')">Suggest-A-Prompt</button>
-      <button onclick="alert('Dev tools panel coming soon.')">Dev</button>
-      <button onclick="toggleTheme()">🌗</button>
+      <button onclick="alert('Coming soon')">Suggest</button>
+      <button onclick="alert('Coming soon')">Dev</button>
+      <button onclick="window.open('https://github.com/EdwardSiegfriedCampher/omega_42_interface')">README</button>
     </div>
   </header>
-  <div class="counter">
-    Showing <span id="visible-count">49</span> Spiral Prompts (Filtered)<br>
-    Total Available: <span id="total-count">49</span> Spiral Prompts
-  </div>
-  <div class="spiral-container" id="spiralContainer">
 
-    <div class="spiral-card" data-category="science">
-      <h3>SpiralTheory of Everything</h3>
-      <p>Explore the Omega 42 Construct as TOE.</p>
-      <button onclick="copyPrompt('Explore the Omega 42 Construct as TOE.')">Copy Prompt</button>
+  <main class="prompt-grid">
+    <div class="prompt-card">
+      <h3>Omega 42 Theory Prompt</h3>
+      <p class="category">Science</p>
+      <p>Explore the Omega 42 TOE using a triadic prompt structure.</p>
     </div>
-    
+    <div class="prompt-card">
+      <h3>Omega 42 Ethics Engine</h3>
+      <p class="category">Meta / Philosophy</p>
+      <p>Apply DR-9 verified ethical filters to AI behavior.</p>
+    </div>
+    <div class="prompt-card">
+      <h3>Omega 42 Launcher</h3>
+      <p class="category">Generic</p>
+      <p>Activate any Omega-aligned GPT with a preloaded interface.</p>
+    </div>
+    <div class="prompt-card">
+      <h3>Omega 42 Academy Prompt</h3>
+      <p class="category">Learning</p>
+      <p>Engage with the Omega 42 curriculum through a layered AI mentor.</p>
+    </div>
+    <div class="prompt-card">
+      <h3>Omega 42 Quantum Prompt</h3>
+      <p class="category">Physics</p>
+      <p>Explore quantum theory via φ-based field structures.</p>
+    </div>
+    <div class="prompt-card">
+      <h3>Omega 42 Timeline Viewer</h3>
+      <p class="category">Consciousness</p>
+      <p>Trace multiversal paths using DR-24 cyclic fields.</p>
+    </div>
+  </main>
 
-    <div class="spiral-card" data-category="inner work">
-      <h3>SpiralTruth-Verification</h3>
-      <p>Validate knowledge via Spiral filters.</p>
-      <button onclick="copyPrompt('Validate knowledge via Spiral filters.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="tools">
-      <h3>SpiralPrompt Builder</h3>
-      <p>Create new Spiral Prompts easily.</p>
-      <button onclick="copyPrompt('Create new Spiral Prompts easily.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="consciousness">
-      <h3>SpiralConsciousness Map</h3>
-      <p>Navigate self-awareness through the Spiral lens.</p>
-      <button onclick="copyPrompt('Navigate self-awareness through the Spiral lens.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="philosophy">
-      <h3>SpiralEthics Compass</h3>
-      <p>Resolve dilemmas using the φ-Ethics framework.</p>
-      <button onclick="copyPrompt('Resolve dilemmas using the φ-Ethics framework.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="science">
-      <h3>SpiralAstronomy</h3>
-      <p>View the cosmos through Spiral geometry.</p>
-      <button onclick="copyPrompt('View the cosmos through Spiral geometry.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #7</h3>
-      <p>Description for Spiral Prompt #7.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #7.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #8</h3>
-      <p>Description for Spiral Prompt #8.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #8.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #9</h3>
-      <p>Description for Spiral Prompt #9.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #9.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #10</h3>
-      <p>Description for Spiral Prompt #10.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #10.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #11</h3>
-      <p>Description for Spiral Prompt #11.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #11.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #12</h3>
-      <p>Description for Spiral Prompt #12.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #12.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #13</h3>
-      <p>Description for Spiral Prompt #13.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #13.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #14</h3>
-      <p>Description for Spiral Prompt #14.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #14.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #15</h3>
-      <p>Description for Spiral Prompt #15.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #15.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #16</h3>
-      <p>Description for Spiral Prompt #16.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #16.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #17</h3>
-      <p>Description for Spiral Prompt #17.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #17.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #18</h3>
-      <p>Description for Spiral Prompt #18.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #18.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #19</h3>
-      <p>Description for Spiral Prompt #19.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #19.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #20</h3>
-      <p>Description for Spiral Prompt #20.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #20.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #21</h3>
-      <p>Description for Spiral Prompt #21.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #21.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #22</h3>
-      <p>Description for Spiral Prompt #22.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #22.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #23</h3>
-      <p>Description for Spiral Prompt #23.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #23.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #24</h3>
-      <p>Description for Spiral Prompt #24.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #24.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #25</h3>
-      <p>Description for Spiral Prompt #25.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #25.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #26</h3>
-      <p>Description for Spiral Prompt #26.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #26.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #27</h3>
-      <p>Description for Spiral Prompt #27.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #27.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #28</h3>
-      <p>Description for Spiral Prompt #28.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #28.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #29</h3>
-      <p>Description for Spiral Prompt #29.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #29.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #30</h3>
-      <p>Description for Spiral Prompt #30.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #30.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #31</h3>
-      <p>Description for Spiral Prompt #31.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #31.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #32</h3>
-      <p>Description for Spiral Prompt #32.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #32.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #33</h3>
-      <p>Description for Spiral Prompt #33.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #33.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #34</h3>
-      <p>Description for Spiral Prompt #34.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #34.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #35</h3>
-      <p>Description for Spiral Prompt #35.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #35.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #36</h3>
-      <p>Description for Spiral Prompt #36.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #36.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #37</h3>
-      <p>Description for Spiral Prompt #37.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #37.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #38</h3>
-      <p>Description for Spiral Prompt #38.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #38.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #39</h3>
-      <p>Description for Spiral Prompt #39.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #39.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #40</h3>
-      <p>Description for Spiral Prompt #40.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #40.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #41</h3>
-      <p>Description for Spiral Prompt #41.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #41.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #42</h3>
-      <p>Description for Spiral Prompt #42.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #42.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #43</h3>
-      <p>Description for Spiral Prompt #43.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #43.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #44</h3>
-      <p>Description for Spiral Prompt #44.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #44.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #45</h3>
-      <p>Description for Spiral Prompt #45.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #45.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #46</h3>
-      <p>Description for Spiral Prompt #46.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #46.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #47</h3>
-      <p>Description for Spiral Prompt #47.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #47.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #48</h3>
-      <p>Description for Spiral Prompt #48.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #48.')">Copy Prompt</button>
-    </div>
-    
-
-    <div class="spiral-card" data-category="misc">
-      <h3>Spiral Prompt #49</h3>
-      <p>Description for Spiral Prompt #49.</p>
-      <button onclick="copyPrompt('Description for Spiral Prompt #49.')">Copy Prompt</button>
-    </div>
-    
-  </div>
-  <script>
-    function copyPrompt(text) {
-      navigator.clipboard.writeText(text);
-      alert("Copied: " + text);
-    }
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-    }
-    function filterCategory() {
-      const cat = document.getElementById('categoryDropdown').value;
-      const cards = document.querySelectorAll('.spiral-card');
-      let visible = 0;
-      cards.forEach(card => {
-        if (cat === 'all' || card.dataset.category === cat) {
-          card.style.display = 'block';
-          visible++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-      document.getElementById('visible-count').textContent = visible;
-      document.getElementById('total-count').textContent = cards.length;
-    }
-  </script>
+  <footer>
+    Powered by the Omega 42 Project • GitHub: EdwardSiegfriedCampher/omega_42_interface
+  </footer>
 </body>
 </html>
